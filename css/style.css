@@ -5,12 +5,218 @@ body {
   font-family: 'Open Sans';
   font-weight: 100;
   line-height: 26px;
-  /* position: sticky; */
   box-sizing: border-box;
+  padding: 10px;
 }
+section{
+  margin: 30px;
+}
+
+/* start header */
+.navbar-inverse{
+  background-color:green;
+  border-color:green;
+
+}
+.navbar-inverse .navbar-brand{
+  color: #fff;
+  font-size: 40px;
+  padding: 40px 15px;
+  font-weight: 900;
+}
+.nav .navbar-nav .navbar-right{
+  margin: 25px 0;
+  display:flex;
+}
+.navbar-inverse .navbar-nav >li>a{
+  color: #fff;
+  text-transform: uppercase;
+}
+.banner{
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.carousel-caption{
+  padding-bottom: 250px;
+  font-family: poppins;
+}
+.carousel-caption h2{
+font-size: 70px;
+text-transform: uppercase;
+font-weight: bold;
+}
+.carousel-caption h2 span{
+color: #edbb00;
+}
+.carousel-caption a{
+color: #edbb00;
+padding: 15px 35px;
+display: inline-block;
+margin-top: 15px;
+color: #fff;
+text-transform: uppercase;
+border-radius:25px
+}
+.carousel-caption .right{
+background-image: none;
+}
+.carousel-caption .left{
+background-image: none;
+}
+.carousel-indicators .active{
+background-color: #edbb00;
+border-color: #edbb00;
+
+}
+
+
+
+/* end header */
+
+/* About us section */
+.about-us-title{
+  font-weight: bold;
+	font-size: 40px;
+  position: relative;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+.about-us-title::before{
+	position: absolute;
+	content: "";
+	width: 150px;
+	height: 3px;
+	background-color:#ffcc00;
+	bottom: 20px;
+	left:-160px;
+}
+ .diamond-1{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid;
+    position: relative;
+    top: -50px;
+    background-color: #ffffff;
+  }
+  .diamond-1:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid;
+
+}
+.diamond-1 span{
+  font-size: 3em;
+  z-index: 10;
+  text-align: center;
+
+}
+.read-more-btn{
+    transition: transform .2s;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #010101;
+    padding: 6px 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    position: relative;
+    overflow: visible;
+    bottom: 0;
+  }
+  .read-more-btn:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  .read-more-btn i{
+    color: #000000;
+    background-color: #ffcc00;
+    padding: 7px;
+    margin-right: -17px;
+    margin-left: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+  }
+  .read-more-btn strong {
+    font-weight: inherit;
+    vertical-align: middle;
+    white-space: nowrap
+  }
+  
+/* End About us section */
+
+/* start-our-work-section */
+.our-work-title{
+  background-color: black;
+  cursor: crosshair;
+}
+.our-work-title img {
+  cursor: crosshair;
+}
+.our-work {
+  font-weight: bold;
+	font-size: 40px;
+  position: relative;
+  text-align: center;
+  animation: 3s ease-out 0s 1 slideInFromLeft;
+  color: #000000;
+}
+.our-work-section-kitchens div{
+margin: 30px;
+}
+.View-Projects-Kitchens{
+  transition: transform .2s;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #010101;
+  padding: 6px 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+  position: relative;
+  overflow: visible;
+  bottom: 0;
+  text-align: center;
+}
+.View-Projects-Kitchens:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.View-Projects-Kitchens i{
+  color: #000000;
+  background-color: #ffcc00;
+  padding: 7px;
+  margin-right: -17px;
+  margin-left: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000000;
+}
+.View-Projects-Kitchens strong {
+  font-weight: inherit;
+  vertical-align: middle;
+  white-space: nowrap
+}
+
+/* end-our-work-section */
  /* Our Services section   */
  .Our-Services-cloumnOne {
    display: flex;
+   /* margin: 30px; */
+   justify-content: space-between;
  }
  .Our-Services-cloumnOne .col-5 {
 background-color: #000;
